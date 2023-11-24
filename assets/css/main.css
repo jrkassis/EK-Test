@@ -3011,7 +3011,7 @@ ul.icons li a.icon:hover:before {
 }
 
 ul.icons.alt li .icon:before {
-	box-shadow: inset 0 0 0 2px #eeeeee;
+	box-shadow: inset 0 0 0 2px #BF9270;
 }
 
 ul.icons.alt li a.icon:hover:before {
@@ -3342,6 +3342,10 @@ table.alt tbody tr td {
 	color: #eeeeee;
 }
 
+.back-to {
+	text-align: center;
+}
+
 /* Wrapper */
 
 #wrapper {
@@ -3360,14 +3364,15 @@ table.alt tbody tr td {
 	left: 0;
 	width: 100%;
 	height: 100%;
+	background-image: url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRJdYXZv7mCmpn0AZBWl5SVgKIv_34K7eOWd81SjDpvsIuqTe_hGdf5ecOeZQIxoVwuV88&usqp=CAU");
+	background-repeat: no-repeat;
+	background-size: cover;
+	/*
 	background-color: #212931;
-	background-image: url("https://i.pinimg.com/564x/31/b7/5f/31b75f58864f6f99ce63bfde9267dfc0.jpg");
 	background-size: auto, auto, 100% auto;
 	background-position: center, center, top center;
 	background-repeat: repeat, no-repeat, no-repeat;
 	background-attachment: scroll, scroll, scroll;
-	filter:brightness(75%);
-	/* 
 	background-image: url("../../images/overlay.png"), linear-gradient(0deg, rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.1)), url("../../images/bg.jpg"); 
 	*/
 	z-index: -1;
@@ -3407,7 +3412,7 @@ body.is-preload #wrapper.fade-in:before {
 @media screen and (orientation: portrait) {
 
 	#wrapper>.bg {
-		background-size: auto, auto, auto 175%;
+		background-size: cover;
 	}
 
 }
@@ -3441,7 +3446,7 @@ body.is-preload #wrapper.fade-in:before {
 	cursor: default;
 	text-align: center;
 	z-index: 1;
-	min-height: 100vh;
+	min-height: 80vh;
 }
 
 #intro input,
@@ -3607,8 +3612,8 @@ body.is-preload #intro:not(.hidden)+#header+#nav {
 @media screen and (max-width: 980px) {
 
 	#intro {
-		padding: 4rem 4rem 2rem 4rem;
-		min-height: 90vh;
+		padding: 4rem 4rem 8rem 4rem;
+		min-height: 70vh;
 	}
 
 	#intro p br {
@@ -3624,7 +3629,7 @@ body.is-preload #intro:not(.hidden)+#header+#nav {
 @media screen and (max-width: 736px) {
 
 	#intro {
-		padding: 3rem 2rem 1rem 2rem;
+		padding: 3rem 2rem 13rem 2rem;
 		min-height: 80vh;
 	}
 
@@ -3783,7 +3788,7 @@ body.is-preload #intro:not(.hidden)+#header+#nav {
 	background: rgba(255, 255, 255, 0.175);
 	height: 4rem;
 	line-height: 4rem;
-	margin: -4rem auto 0 auto;
+	margin: 4rem auto 0 auto;
 	overflow: hidden;
 	padding: 0 2rem 0 0;
 	position: relative;
@@ -4053,6 +4058,10 @@ body.is-preload #intro:not(.hidden)+#header+#nav {
 }
 
 @media screen and (max-width: 980px) {
+
+	#main {
+		margin-top: 8rem;
+	}
 
 	#main>.posts>* {
 		width: 50%;
@@ -4498,7 +4507,7 @@ body.is-preload #intro:not(.hidden)+#header+#nav {
 	}
 
 	#footer>section {
-		border-top: solid 2px #e2e2e2;
+		border-top: solid 2px #ffffff;
 	}
 
 	#footer>section:first-child {
@@ -4766,9 +4775,10 @@ body.is-preload #intro:not(.hidden)+#header+#nav {
 	transition: transform 0.5s ease, box-shadow 0.5s ease, visibility 0.5s;
 	display: none;
 	-webkit-overflow-scrolling: touch;
-	background: #ffffff;
+	/*jrkassis*/
+	background: #FFEDDB;
 	box-shadow: none;
-	color: #212931;
+	color: #717981;
 	height: 100%;
 	max-width: 80%;
 	overflow-y: auto;
@@ -4787,7 +4797,7 @@ body.is-preload #intro:not(.hidden)+#header+#nav {
 }
 
 #navPanel .links li {
-	border-top: solid 2px #eeeeee;
+	border-top: solid 2px var(--hover-color);
 }
 
 #navPanel .links li a {
@@ -4800,10 +4810,17 @@ body.is-preload #intro:not(.hidden)+#header+#nav {
 	letter-spacing: 0.075em;
 	padding: 0.75rem 0;
 	text-transform: uppercase;
+	color: #717981;
+	text-decoration: none;
 }
 
 #navPanel .links li:first-child {
 	border-top: 0;
+}
+
+#navPanel .icons li a {
+	color: #E3B7A0;
+	box-shadow: #BF9270;
 }
 
 #navPanel .close {
@@ -4846,7 +4863,7 @@ body.is-preload #intro:not(.hidden)+#header+#nav {
 }
 
 #navPanel .close:hover {
-	color: #212931;
+	color: var(--hover-color);
 }
 
 @media screen and (max-width: 736px) {
