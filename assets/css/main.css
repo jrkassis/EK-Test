@@ -3346,6 +3346,29 @@ table.alt tbody tr td {
 	margin-bottom: 2rem;
 }
 
+/* Carousel Style */
+.bg-img-1 {
+    background-image: url("https://static01.nyt.com/images/2023/05/28/fashion/26VOWS-BLACK-LOVE/26VOWS-BLACK-LOVE-facebookJumbo.jpg");
+}
+.bg-img-2 {
+    background-image: url("https://www.joshuadwain.com/wp-content/uploads/2022/04/the-breakers-069-wedding-photographer-joshua-dwain-black-west-palm-beach.jpg");
+}
+.bg-img-3 {
+    background-image: url("https://nativeroaming.com/wp-content/uploads/2021/01/rustic-wedding-ceremony-native-roaming.jpg");
+}
+
+.carousel-image {
+    height: 100vh;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+	filter: contrast(70%) brightness(70%);
+}
+
+.carousel {
+	z-index: 99 !important;
+}
+
 /* Wrapper */
 
 #wrapper {
@@ -3354,7 +3377,7 @@ table.alt tbody tr td {
 	-ms-transition: opacity 0.5s ease;
 	transition: opacity 0.5s ease;
 	position: relative;
-	z-index: 1;
+
 	overflow: hidden;
 }
 
@@ -3367,15 +3390,15 @@ table.alt tbody tr td {
 	background-image: url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRJdYXZv7mCmpn0AZBWl5SVgKIv_34K7eOWd81SjDpvsIuqTe_hGdf5ecOeZQIxoVwuV88&usqp=CAU");
 	background-repeat: no-repeat;
 	background-size: cover;
-	/*
+	background-attachment: scoll, scroll, scroll;
+	/* 
 	background-color: #212931;
 	background-size: auto, auto, 100% auto;
 	background-position: center, center, top center;
 	background-repeat: repeat, no-repeat, no-repeat;
-	background-attachment: scroll, scroll, scroll;
 	background-image: url("../../images/overlay.png"), linear-gradient(0deg, rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.1)), url("../../images/bg.jpg"); 
-	*/
-	z-index: -1;
+	 */
+	z-index: -99 !important;
 }
 
 #wrapper>.bg.fixed {
@@ -3420,8 +3443,8 @@ body.is-preload #wrapper.fade-in:before {
 /* Intro */
 
 #intro {
-	color: #ffffff;
-	padding: 8rem 4rem 6rem 4rem;
+	/*
+	padding: 4rem 4rem 0rem 4rem;
 	-moz-align-items: center;
 	-webkit-align-items: center;
 	-ms-align-items: center;
@@ -3447,7 +3470,9 @@ body.is-preload #wrapper.fade-in:before {
 	text-align: center;
 	z-index: 1;
 	min-height: 80vh;
+	*/
 }
+  
 
 #intro input,
 #intro select,
@@ -3611,10 +3636,10 @@ body.is-preload #intro:not(.hidden)+#header+#nav {
 
 @media screen and (max-width: 980px) {
 
-	#intro {
+	/* #intro {
 		padding: 4rem 4rem 8rem 4rem;
 		min-height: 70vh;
-	}
+	} */
 
 	#intro p br {
 		display: none;
@@ -3628,10 +3653,10 @@ body.is-preload #intro:not(.hidden)+#header+#nav {
 
 @media screen and (max-width: 736px) {
 
-	#intro {
+	/* #intro {
 		padding: 3rem 2rem 13rem 2rem;
 		min-height: 80vh;
-	}
+	} */
 
 	#intro h1 {
 		font-size: 3.25rem;
@@ -3744,6 +3769,7 @@ body.is-preload #intro:not(.hidden)+#header+#nav {
 	padding: 1rem 1.75rem;
 	text-transform: uppercase;
 	visibility: visible;
+	margin-bottom: -8rem;
 }
 
 #header .logo:hover {
@@ -4019,6 +4045,20 @@ body.is-preload #intro:not(.hidden)+#header+#nav {
 	text-align: center;
 	width: 100%;
 	padding: 0;
+}
+
+.section1 {
+	background-color: #ffffff;
+}
+.section2 {
+	background-color: #EDCDBB;
+}
+.test{
+	position: absolute;
+	top: 40%;
+	z-index: 999;
+	text-align: center;
+	width: 100%;
 }
 
 #main>.posts>* {
