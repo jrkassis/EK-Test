@@ -3349,20 +3349,22 @@ table.alt tbody tr td {
 
 /* Carousel Style */
 .bg-img-1 {
-    background-image: url("https://static01.nyt.com/images/2023/05/28/fashion/26VOWS-BLACK-LOVE/26VOWS-BLACK-LOVE-facebookJumbo.jpg");
+	background-image: url("https://static01.nyt.com/images/2023/05/28/fashion/26VOWS-BLACK-LOVE/26VOWS-BLACK-LOVE-facebookJumbo.jpg");
 }
+
 .bg-img-2 {
-    background-image: url("https://www.joshuadwain.com/wp-content/uploads/2022/04/the-breakers-069-wedding-photographer-joshua-dwain-black-west-palm-beach.jpg");
+	background-image: url("https://www.joshuadwain.com/wp-content/uploads/2022/04/the-breakers-069-wedding-photographer-joshua-dwain-black-west-palm-beach.jpg");
 }
+
 .bg-img-3 {
-    background-image: url("https://nativeroaming.com/wp-content/uploads/2021/01/rustic-wedding-ceremony-native-roaming.jpg");
+	background-image: url("https://nativeroaming.com/wp-content/uploads/2021/01/rustic-wedding-ceremony-native-roaming.jpg");
 }
 
 .carousel-image {
-    height: 100vh;
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center;
+	height: 100vh;
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: center;
 	filter: contrast(70%) brightness(70%);
 }
 
@@ -3473,7 +3475,7 @@ body.is-preload #wrapper.fade-in:before {
 	min-height: 80vh;
 	*/
 }
-  
+
 
 #intro input,
 #intro select,
@@ -4051,16 +4053,52 @@ body.is-preload #intro:not(.hidden)+#header+#nav {
 .section1 {
 	background-color: #ffffff;
 }
+
 .section2 {
 	background-color: #EDCDBB;
 }
-.test{
+
+.test {
 	position: absolute;
-	top: 40%;
+	top: 60%;
 	z-index: 999;
 	text-align: center;
 	width: 100%;
 }
+
+#logo-ek {
+	position: absolute;
+	top: 5%;
+	z-index: 999;
+	text-align: right;
+	margin-left: 85vw;
+	height: 10rem;
+}
+
+@media screen and (max-width: 1280px) {
+	#logo-ek {
+		margin-left: 82vw;
+	}
+}
+
+@media screen and (max-width: 980px) {
+	#logo-ek {
+		top: 7%;
+		margin-left: 80vw;
+	}
+}
+
+@media screen and (max-width: 824px) {
+	#logo-container {
+		width: 100%;
+	}
+
+	#logo-ek {
+		margin-left: calc(50% - (146.66px/2));
+	}
+
+}
+
 
 #main>.posts>* {
 	-moz-flex-shrink: 1;
