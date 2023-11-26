@@ -1,7 +1,6 @@
 
 document.getElementById("button-down").addEventListener("click", scrollThroughDown);
-function scrollThroughDown ()
-{
+function scrollThroughDown() {
     let width = screen.width;
     if (width <= 980) {
         var btn = document.getElementById("button-down");
@@ -15,8 +14,7 @@ function scrollThroughDown ()
 };
 
 document.getElementById("button-up").addEventListener("click", scrollThroughUp);
-function scrollThroughUp ()
-{
+function scrollThroughUp() {
     let width = screen.width;
     if (width <= 980) {
         var btn = document.getElementById("button-up");
@@ -28,4 +26,3 @@ function scrollThroughUp ()
         console.log("width => 980")
     }
 };
-
