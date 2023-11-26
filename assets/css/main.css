@@ -284,6 +284,12 @@ article header p {
 	font-family: 'Charm', cursive;
 }
 
+@media screen and (max-width: 980px) {
+	article header p {
+		padding-top: 5vh;
+	}
+}
+
 #main section article p {
 	font-family: 'Charm', cursive;
 }
@@ -2182,7 +2188,7 @@ hr {
 }
 
 .box {
-	border-color: #9A3B3B;
+	border-color: #804c4c;
 }
 
 /* Button */
@@ -3382,6 +3388,7 @@ table.alt tbody tr td {
 
 .carousel {
 	z-index: 99 !important;
+	box-shadow: #0000008f 0px 22px 70px 4px;
 }
 
 /* Wrapper */
@@ -3393,6 +3400,7 @@ table.alt tbody tr td {
 	transition: opacity 0.5s ease;
 	position: relative;
 	overflow: hidden;
+	box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px, rgba(0, 0, 0, 0.22) 0px 15px 12px;
 }
 
 #wrapper>.bg {
@@ -3588,6 +3596,7 @@ header a {
 	transform: translateY(2rem);
 	opacity: 0;
 	visibility: hidden;
+	box-shadow: rgba(14, 30, 37, 0.12) 0px 2px 4px 0px, rgba(14, 30, 37, 0.32) 0px 2px 16px 0px;
 }
 
 #intro.hidden {
@@ -3962,12 +3971,11 @@ body.is-preload #intro:not(.hidden)+#header+#nav {
 	width: calc(100% - 4rem);
 	max-width: 72rem;
 	z-index: 2;
-	box-shadow: rgba(0, 0, 0, 0.06) 0px 2px 4px 0px inset;
+	box-shadow: #0000008f 0px 22px 70px 4px; 
 }
 
 #main>* {
 	padding: 4rem 4rem 2rem 4rem;
-	border-top: solid 2px #9A3B3B;
 	margin: 0;
 }
 
@@ -3980,7 +3988,8 @@ body.is-preload #intro:not(.hidden)+#header+#nav {
 }
 
 #main>.post {
-	padding: 8rem 8rem 6rem 8rem;
+	padding: 8rem 8rem 0rem 8rem;
+	/* box-shadow: rgba(0, 0, 0, 0.45) 0px 25px 20px -20px; */
 }
 
 #main>.post header.major>.date {
@@ -3996,12 +4005,12 @@ body.is-preload #intro:not(.hidden)+#header+#nav {
 
 #main>.post.featured {
 	text-align: center;
+	
 }
 
-#main section article {
-	box-shadow: rgba(0, 0, 0, 0.35) 0px -50px 36px -28px inset;
+#main section .section1 {
 	box-shadow: rgba(0, 0, 0, 0.45) 0px 25px 20px -20px;
-	min-height: 60vh;
+	min-height: 70vh;
 }
 
 @media screen and (max-width: 1280px) {
@@ -4009,6 +4018,7 @@ body.is-preload #intro:not(.hidden)+#header+#nav {
 	#main>.post {
 		padding: 6rem 4rem 4rem 4rem;
 	}
+
 
 }
 
@@ -4050,12 +4060,15 @@ body.is-preload #intro:not(.hidden)+#header+#nav {
 	padding: 0;
 }
 
-.section1 {
-	background-color: #ffffff;
+.break-section{
+	height: 100%;
+	width: 100%;
+	border: tr;
+	background-image: linear-gradient(to bottom, #FFEDDB, #ffffff);
 }
 
-.section2 {
-	background-color: #EDCDBB;
+.section1 {
+	background-color: #ffffff;
 }
 
 .test {
@@ -4075,9 +4088,17 @@ body.is-preload #intro:not(.hidden)+#header+#nav {
 	height: 10rem;
 }
 
+.section2 {
+	background-color: #EDCDBB;
+	height: 20vh !important;
+}
+
 @media screen and (max-width: 1280px) {
 	#logo-ek {
 		margin-left: 82vw;
+	}
+	.section2 {
+		height: 15vh !important;
 	}
 }
 
@@ -4891,7 +4912,7 @@ body.is-preload #intro:not(.hidden)+#header+#nav {
 	font-size: 0.9rem;
 	font-weight: 900;
 	letter-spacing: 0.075em;
-	padding: 0.75rem 0;
+	padding: 2rem 0;
 	text-transform: uppercase;
 	color: #717981;
 	text-decoration: none;
@@ -5003,7 +5024,7 @@ body.is-preload #intro:not(.hidden)+#header+#nav {
 
 .photo img {
 	width: 300px;
-	height: 280px;
+	height: 450px;
 	object-fit: cover;
 	filter: grayscale(100%) contrast(120%);
 	box-shadow: 10px 15px 25px 0 rgba(0, 0, 0, .2);
@@ -5048,19 +5069,53 @@ body.is-preload #intro:not(.hidden)+#header+#nav {
 	margin-top: 0;
 }
 
-.photo h1 {
+.photo h2 {
 	position: absolute;
 	z-index: 1;
-	transform: translate(-25%, -100%);
+	transform: translate(-15%, -120%);
 	font-family: 'Charm', cursive;
 	margin: 0;
 	line-height: 1;
 	color: #000000;
 }
 
+.tag-img {
+	border-radius: 150px 150px 0 0;
+}
+
+.photo {
+	box-shadow: rgba(240, 125, 125, 0.4) 0px 5px, rgba(240, 125, 125, 0.3) 0px 10px, rgba(240, 125, 125, 0.2) 0px 15px, rgba(240, 125, 125, 0.1) 0px 20px, rgba(240, 125, 125, 0.05) 0px 25px;
+}
+
+.polaroid #wrapper {
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 20px;
+    position: relative;
+    overflow: hidden;
+    width: 380px;
+    height: 570px;
+    transform: rotate(-2deg);
+    border: 10px solid #fff;
+}
+
+.polaroid img {
+	position: center center;
+}
+
 @media screen and (max-width: 1680px) {
 	.photo img {
 		width: 250px;
+	}
+	.polaroid #wrapper {
+		width: 330px;
+    	height: 520px;
+	}
+}
+@media screen and (max-width: 1280px) {
+	.polaroid #wrapper {
+		width: 280px;
+    	height: 470px;
 	}
 }
 @media screen and (max-width: 1050px) {
@@ -5092,5 +5147,9 @@ body.is-preload #intro:not(.hidden)+#header+#nav {
 @media screen and (max-width: 330px){
 		.photo img {
 			width: 200px;
+		}
+		.polaroid #wrapper {
+			width: 250px;
+			height: 440px;
 		}
 }
