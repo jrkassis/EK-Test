@@ -2,6 +2,12 @@
 @import url("https://fonts.googleapis.com/css?family=Merriweather:300,700,300italic,700italic|Source+Sans+Pro:900");
 @import url('https://fonts.googleapis.com/css2?family=Charm&display=swap');
 
+@font-face {
+	font-family: Espoir;
+	src: url("../Font/Espoir.ttf");
+	font-weight: bold;
+}
+
 :root {
 	--hover-color: rgb(110, 64, 107);
 }
@@ -243,7 +249,7 @@ body,
 input,
 select,
 textarea {
-	font-family: 'Charm', cursive;
+	font-family: 'Espoir';
 
 	font-weight: 300;
 	font-size: 1rem;
@@ -279,7 +285,7 @@ p {
 }
 
 article header p {
-	font-family: 'Charm', cursive;
+	/* font-family: 'Espoir'; */
 }
 
 @media screen and (max-width: 980px) {
@@ -289,7 +295,7 @@ article header p {
 }
 
 #main section article p {
-	font-family: 'Charm', cursive;
+	font-family: 'Espoir';
 }
 
 h1,
@@ -298,7 +304,7 @@ h3,
 h4,
 h5,
 h6 {
-	font-family: 'Charm', cursive;
+	font-family: 'Espoir';
 	font-weight: 900;
 	line-height: 1.5;
 	letter-spacing: 0.075em;
@@ -367,7 +373,7 @@ blockquote {
 
 code {
 	border: solid 2px;
-	font-family: 'Charm', cursive;
+	font-family: 'Espoir';
 	font-size: 0.9rem;
 	margin: 0 0.25rem;
 	padding: 0.25rem 0.65rem;
@@ -375,7 +381,7 @@ code {
 
 pre {
 	-webkit-overflow-scrolling: touch;
-	font-family: 'Charm', cursive;
+	font-family: 'Espoir';
 	font-size: 0.9rem;
 	margin: 0 0 2rem 0;
 }
@@ -2208,7 +2214,7 @@ button,
 	border-radius: 0;
 	cursor: pointer;
 	display: inline-block;
-	font-family: 'Charm', cursive;
+	font-family: 'Espoir';
 	font-size: 0.8rem;
 	font-weight: 900;
 	letter-spacing: 0.075em;
@@ -2444,7 +2450,7 @@ form>.fields>.field.quarter {
 
 label {
 	display: block;
-	font-family: 'Charm', cursive;
+	font-family: 'Espoir';
 	font-weight: 900;
 	line-height: 1.5;
 	letter-spacing: 0.075em;
@@ -3160,7 +3166,7 @@ table td {
 }
 
 table th {
-	font-family: 'Charm', cursive;
+	font-family: 'Espoir';
 	font-size: 0.8rem;
 	font-weight: 900;
 	letter-spacing: 0.075em;
@@ -3261,7 +3267,7 @@ table.alt tbody tr td {
 	transition: background-color 0.2s ease-in-out, border-color 0.2s ease-in-out, box-shadow 0.2s ease-in-out, color 0.2s ease-in-out;
 	border: solid 2px;
 	display: inline-block;
-	font-family: 'Charm', cursive;
+	font-family: 'Espoir';
 	font-size: 0.8rem;
 	font-weight: 900;
 	height: 3rem;
@@ -3365,15 +3371,33 @@ table.alt tbody tr td {
 
 /* Carousel Style */
 .bg-img-1 {
-	background-image: url("https://static01.nyt.com/images/2023/05/28/fashion/26VOWS-BLACK-LOVE/26VOWS-BLACK-LOVE-facebookJumbo.jpg");
+	background-image: url("../../images/IMG_7520.jpg");
+}
+
+@media screen and (max-width: 980px) {
+	.bg-img-1 {
+		background-image: url("../../images/IMG_7503.JPG");
+	}
 }
 
 .bg-img-2 {
-	background-image: url("https://www.joshuadwain.com/wp-content/uploads/2022/04/the-breakers-069-wedding-photographer-joshua-dwain-black-west-palm-beach.jpg");
+	background-image: url("../../images/IMG_7490.JPG");
+}
+
+@media screen and (min-width: 690px) {
+	.bg-img-2 {
+		background-image: url("../../images/IMG_7389\ 2.JPG");
+	}
 }
 
 .bg-img-3 {
-	background-image: url("https://nativeroaming.com/wp-content/uploads/2021/01/rustic-wedding-ceremony-native-roaming.jpg");
+	background-image: url("../../images/IMG_7507.JPG");
+}
+
+@media screen and (max-width: 980px) {
+	.bg-img-3 {
+		background-image: url("../../images/IMG_7476.JPG");
+	}
 }
 
 .carousel-image {
@@ -3763,7 +3787,7 @@ body.is-preload #intro:not(.hidden)+#header+#nav {
 	border-style: solid;
 	border-color: #ffffff;
 	border-width: 5px !important;
-	font-family: 'Charm', cursive;
+	font-family: 'Espoir';
 	font-size: 2.25rem;
 	font-weight: 900;
 	letter-spacing: 0.075em;
@@ -3898,7 +3922,7 @@ body.is-preload #intro:not(.hidden)+#header+#nav {
 	-webkit-flex-shrink: 1;
 	-ms-flex-shrink: 1;
 	flex-shrink: 1;
-	font-family: 'Charm', cursive;
+	font-family: 'Espoir';
 	font-weight: 900;
 	letter-spacing: 0.075em;
 	list-style: none;
@@ -3969,7 +3993,7 @@ body.is-preload #intro:not(.hidden)+#header+#nav {
 	width: calc(100% - 4rem);
 	max-width: 72rem;
 	z-index: 2;
-	box-shadow: #0000008f 0px 22px 70px 4px; 
+	box-shadow: #0000008f 0px 22px 70px 4px;
 }
 
 #main>* {
@@ -3996,19 +4020,20 @@ body.is-preload #intro:not(.hidden)+#header+#nav {
 
 #main>.post header.major>h1,
 #main>.post header.major h2 {
-	font-size: 4rem;
+	font-size: 3rem;
 	line-height: 1.1;
 	margin: -4rem 0 -1rem 0;
 }
 
 #main>.post.featured {
 	text-align: center;
-	
+
 }
 
 #main section .section1 {
 	box-shadow: rgba(0, 0, 0, 0.45) 0px 25px 20px -20px;
-	min-height: 70vh;
+	min-height: 40vh;
+	/* posts height */
 }
 
 @media screen and (max-width: 1280px) {
@@ -4058,7 +4083,7 @@ body.is-preload #intro:not(.hidden)+#header+#nav {
 	padding: 0;
 }
 
-.break-section{
+.break-section {
 	height: 100%;
 	width: 100%;
 	border: tr;
@@ -4095,6 +4120,7 @@ body.is-preload #intro:not(.hidden)+#header+#nav {
 	#logo-ek {
 		margin-left: 82vw;
 	}
+
 	.section2 {
 		height: 15vh !important;
 	}
@@ -4131,12 +4157,12 @@ body.is-preload #intro:not(.hidden)+#header+#nav {
 }
 
 #main>.posts>* {
-	width: 33.333333%;
+	width: 50%;
 }
 
 #main>.posts>* {
 	padding: 2.5rem;
-	width: 33.333333%;
+	width: 50%;
 }
 
 #main>.posts>article {
@@ -4175,16 +4201,12 @@ body.is-preload #intro:not(.hidden)+#header+#nav {
 @media screen and (max-width: 736px) {
 
 	#main>.posts>* {
-		width: 100%;
-	}
-
-	#main>.posts>* {
 		padding: 2rem;
 		width: 100%;
 	}
 
 	#main .posts article p {
-		font-family: 'Charm', cursive;
+		font-family: 'Espoir';
 	}
 
 	#main>.posts>article:nth-child(2n - 1) {
@@ -4693,7 +4715,7 @@ body.is-preload #intro:not(.hidden)+#header+#nav {
 	position: relative;
 	color: #ffffffa0;
 	cursor: default;
-	font-family: 'Charm', cursive;
+	font-family: 'Espoir';
 	font-size: 0.8rem;
 	font-weight: 900;
 	letter-spacing: 0.075em;
@@ -4905,7 +4927,7 @@ body.is-preload #intro:not(.hidden)+#header+#nav {
 #navPanel .links li a {
 	border-bottom: 0;
 	display: block;
-	font-family: 'Charm', cursive;
+	font-family: 'Espoir';
 	font-size: 0.9rem;
 	font-size: 0.9rem;
 	font-weight: 900;
@@ -5014,22 +5036,22 @@ body.is-preload #intro:not(.hidden)+#header+#nav {
 
 .photo {
 	position: relative;
-	top: 50%;
-	left: 45%;
+	top: 40%;
+	left: 25%;
 	transform: translate(-50%, -50%);
 	display: inline-block;
 }
 
 .photo img {
 	width: 300px;
-	height: 450px;
+	height: 350px;
 	object-fit: cover;
-	filter: grayscale(100%) contrast(120%);
+
 	box-shadow: 10px 15px 25px 0 rgba(0, 0, 0, .2);
 	display: inline-block;
 	transition: all .5s cubic-bezier(0.645, 0.045, 0.355, 1);
 	margin-top: -10px;
-	
+
 }
 
 .photo:hover img {
@@ -5071,7 +5093,7 @@ body.is-preload #intro:not(.hidden)+#header+#nav {
 	position: absolute;
 	z-index: 1;
 	transform: translate(-15%, -120%);
-	font-family: 'Charm', cursive;
+	font-family: 'Espoir';
 	margin: 0;
 	line-height: 1;
 	color: #000000;
@@ -5086,15 +5108,15 @@ body.is-preload #intro:not(.hidden)+#header+#nav {
 }
 
 .polaroid #wrapper {
-    margin-left: auto;
-    margin-right: auto;
-    margin-top: 20px;
-    position: relative;
-    overflow: hidden;
-    width: 380px;
-    height: 570px;
-    transform: rotate(-2deg);
-    border: 10px solid #fff;
+	margin-left: auto;
+	margin-right: auto;
+	margin-top: 20px;
+	position: relative;
+	overflow: hidden;
+	width: 380px;
+	height: 380px;
+	transform: rotate(-2deg);
+	border: 10px solid #fff;
 }
 
 .polaroid img {
@@ -5104,50 +5126,179 @@ body.is-preload #intro:not(.hidden)+#header+#nav {
 @media screen and (max-width: 1680px) {
 	.photo img {
 		width: 250px;
+		height: 380px;
 	}
+
+	.photo {
+		left: 30%;
+	}
+
 	.polaroid #wrapper {
 		width: 330px;
-    	height: 520px;
+		height: 520px;
 	}
+
+	/* CHANGE */
+
 }
+
 @media screen and (max-width: 1280px) {
 	.polaroid #wrapper {
 		width: 280px;
-    	height: 470px;
+		height: 380px;
 	}
 }
+
 @media screen and (max-width: 1050px) {
 	.photo img {
 		width: 230px;
+	}
+
+	.polaroid #wrapper {
+		width: 230px;
+		height: 400px;
 	}
 }
 
 @media screen and (max-width: 980px) {
 	.photo img {
-		width: 280px;
+		width: 230px;
+		height: 350px;
+	}
+
+	.photo {
+		left: 35%;
 	}
 }
+
 @media screen and (max-width: 850px) {
 	.photo img {
-		width: 240px;
+		width: 200px;
+		height: 300px;
+	}
+
+	.polaroid #wrapper {
+		width: 210px;
+		height: 360px;
+	}
+
+	.photo {
+		left: 40%;
 	}
 }
+
 @media screen and (max-width: 736px) {
 	.photo img {
-		width: 320px;
+		width: 180px;
+		height: 260px;
+	}
+
+	.polaroid #wrapper {
+		width: 180px;
+		height: 320px;
+	}
+
+	#main>.posts>* {
+		width: 50%;
 	}
 }
-@media screen and (max-width: 420px){
-		.photo img {
-			width: 250px;
-		}
+
+@media screen and (max-width: 650px) {
+	.photo img {
+		width: 120px;
+		height: 180px;
+	}
+
+	.polaroid #wrapper {
+		width: 150px;
+		height: 300px;
+	}
+
+	#main>.posts>* {
+		width: 50%;
+	}
 }
-@media screen and (max-width: 330px){
-		.photo img {
-			width: 200px;
-		}
-		.polaroid #wrapper {
-			width: 250px;
-			height: 440px;
-		}
+
+@media screen and (max-width: 630px) {
+	.polaroid #wrapper {
+		width: 120px;
+		height: 270px;
+	}
+}
+
+@media screen and (max-width: 500px) {
+	.polaroid #wrapper {
+		width: 100px;
+		height: 250px;
+	}
+
+	.photo {
+		left: 45%;
+	}
+}
+
+@media screen and (max-width: 370px) {
+	.photo img {
+		width: 120px;
+		height: 180px;
+	}
+
+	#main>.posts>* {
+		width: 50%;
+	}
+
+	.polaroid #wrapper {
+		width: 100px;
+		height: 250px;
+	}
+}
+
+#div-mid {
+	background-image: linear-gradient(to bottom, #FFEDDB, #EDCDBB);
+
+}
+
+.mid-section {
+	width: 100%;
+	padding: 0 0;
+	box-shadow: rgba(14, 30, 37, 0.12) 0px 2px 4px 0px, rgba(14, 30, 37, 0.32) 0px 2px 16px 0px;
+	z-index: 999;
+	background-color: #ffffff;
+}
+
+.mid-section div {
+	line-height: 3;
+	width: 100%;
+}
+
+.mid-section .box {
+	border: transparent;
+}
+
+.mid-section img {
+	width: 100%;
+	/* border-radius: 450px 450px 0 0; */
+	padding: 0;
+}
+
+.mid-section a {
+	text-decoration: none;
+	color: #000000;
+}
+
+@media screen and (max-width: 980px) {
+	.mid-section div {
+		line-height: 1.5;
+		font-size: 0.7rem;
+	}
+
+	.mid-section .box {
+		padding: 0;
+	}
+}
+
+.break-more {
+	width: 100% !important; 
+	background-color: #EDCDBB;
+	box-shadow: rgba(14, 30, 37, 0.12) 0px 2px 4px 0px, rgba(14, 30, 37, 0.32) 0px 2px 16px 0px;
 }

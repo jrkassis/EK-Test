@@ -5,11 +5,11 @@ function scrollThroughDown() {
     if (width <= 980) {
         var btn = document.getElementById("button-down");
         btn.href = '#header';
-        console.log("width <= 980")
+        console.log("width <= 980");
     } else {
         var btn = document.getElementById("button-down");
         btn.href = '#nav';
-        console.log("width => 980")
+        console.log("width => 980");
     }
 };
 
@@ -19,10 +19,10 @@ function scrollThroughUp() {
     if (width <= 980) {
         var btn = document.getElementById("button-up");
         btn.href = '#header';
-        console.log("width <= 980")
+        console.log("width <= 980");
     } else {
         var btn = document.getElementById("button-up");
         btn.href = '#nav';
-        console.log("width => 980")
+        console.log("width => 980");
     }
 };
