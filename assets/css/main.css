@@ -196,6 +196,10 @@ mark {
 	color: inherit;
 }
 
+.yoyo {
+	text-align-last: center;
+}
+
 input::-moz-focus-inner {
 	border: 0;
 	padding: 0;
@@ -3717,7 +3721,7 @@ body.is-preload #intro:not(.hidden)+#header+#nav {
 	}
 
 	#intro+#header {
-		margin-top: -14rem;
+		margin-top: -5rem;
 	}
 
 }
@@ -3771,7 +3775,7 @@ body.is-preload #intro:not(.hidden)+#header+#nav {
 	-webkit-user-select: none;
 	-ms-user-select: none;
 	user-select: none;
-	height: 20rem;
+	height: 10rem;
 	padding-bottom: 8rem;
 	position: relative;
 	text-align: center;
@@ -3851,7 +3855,7 @@ body.is-preload #intro:not(.hidden)+#header+#nav {
 @media screen and (max-width: 980px) {
 
 	#header {
-		height: 14rem;
+		height: 5rem;
 		padding-bottom: 4rem;
 	}
 
@@ -5346,11 +5350,13 @@ body.is-preload #intro:not(.hidden)+#header+#nav {
 
 .mid-section div {
 	line-height: 3;
+	text-align-last: center;
 	width: 100%;
 }
 
 .mid-section .box {
 	border: transparent;
+	text-align-last: center;
 }
 
 .mid-section img {
@@ -5370,6 +5376,7 @@ body.is-preload #intro:not(.hidden)+#header+#nav {
 	.mid-section div {
 		line-height: 2;
 		font-size: 0.7rem;
+		text-align-last: center;
 	}
 
 	.mid-section {
@@ -5399,6 +5406,11 @@ body.is-preload #intro:not(.hidden)+#header+#nav {
 	text-align: center;
 }
 
+.choose-us div {
+	text-align: center;
+	text-align-last: center;
+}
+
 .choose-us .posts article div a {
 	text-decoration: none;
 	color: #000000;
@@ -5412,12 +5424,14 @@ body.is-preload #intro:not(.hidden)+#header+#nav {
 @media screen and (max-width: 736px) {
 	.choose-us .posts article div {
 		margin: 3% 10%;
+		text-align-last: center;
 	}
 }
 
 @media screen and (max-width: 550px) {
 	.choose-us .posts article div {
 		margin: 3% 5%;
+		text-align-last: center;
 	}
 }
 
@@ -5504,4 +5518,23 @@ body.is-preload #intro:not(.hidden)+#header+#nav {
 
 #third-ov {
 	border-radius: 200px 0 0 200px;
+}
+
+@media screen and (max-width: 1100px) {
+	.choose-us div {
+		text-align-last: center
+	};
+}
+
+.main-port {
+	width: 100%;
+}
+
+.main-port div{
+	text-align-last: center;
+}
+
+.main-port img {
+	width: 25%;
+	text-align: center;
 }
