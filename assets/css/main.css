@@ -3381,7 +3381,7 @@ table.alt tbody tr td {
 }
 
 .bg-img-2 {
-	background-image: url("../../images/IMG_7490.JPG");
+	background-image: url("../../images/Wedding1.jpg");
 }
 
 @media screen and (min-width: 690px) {
@@ -4031,8 +4031,8 @@ body.is-preload #intro:not(.hidden)+#header+#nav {
 }
 
 #main section .section1 {
-	box-shadow: rgba(0, 0, 0, 0.45) 0px 25px 20px -20px;
-	min-height: 40vh;
+	/* box-shadow: rgba(0, 0, 0, 0.45) 0px 25px 20px -20px; */
+	min-height: 20vh;
 	/* posts height */
 }
 
@@ -4087,11 +4087,11 @@ body.is-preload #intro:not(.hidden)+#header+#nav {
 	height: 100%;
 	width: 100%;
 	border: tr;
-	background-image: linear-gradient(to bottom, #FFEDDB, #ffffff);
+	background-image: linear-gradient(to bottom, #FFEDDB, #EDCDBB);
 }
 
 .section1 {
-	background-color: #ffffff;
+	background-color: #EDCDBB;
 }
 
 .test {
@@ -4157,12 +4157,12 @@ body.is-preload #intro:not(.hidden)+#header+#nav {
 }
 
 #main>.posts>* {
-	width: 50%;
+	width: 25%;
 }
 
 #main>.posts>* {
 	padding: 2.5rem;
-	width: 50%;
+	width: 25%;
 }
 
 #main>.posts>article {
@@ -4188,12 +4188,12 @@ body.is-preload #intro:not(.hidden)+#header+#nav {
 	}
 
 	#main>.posts>* {
-		width: 50%;
+		width: 25%;
 	}
 
 	#main>.posts>* {
 		padding: 2.5rem;
-		width: 50%;
+		width: 25%;
 	}
 
 }
@@ -5036,8 +5036,8 @@ body.is-preload #intro:not(.hidden)+#header+#nav {
 
 .photo {
 	position: relative;
-	top: 40%;
-	left: 25%;
+	top: 50%;
+	left: 50%;
 	transform: translate(-50%, -50%);
 	display: inline-block;
 }
@@ -5103,10 +5103,6 @@ body.is-preload #intro:not(.hidden)+#header+#nav {
 	border-radius: 150px 150px 0 0;
 }
 
-.photo {
-	box-shadow: rgba(240, 125, 125, 0.4) 0px 5px, rgba(240, 125, 125, 0.3) 0px 10px, rgba(240, 125, 125, 0.2) 0px 15px, rgba(240, 125, 125, 0.1) 0px 20px, rgba(240, 125, 125, 0.05) 0px 25px;
-}
-
 .polaroid #wrapper {
 	margin-left: auto;
 	margin-right: auto;
@@ -5125,12 +5121,12 @@ body.is-preload #intro:not(.hidden)+#header+#nav {
 
 @media screen and (max-width: 1680px) {
 	.photo img {
-		width: 250px;
-		height: 380px;
+		width: 200px;
+		height: 300px;
 	}
 
 	.photo {
-		left: 30%;
+		left: 45%;
 	}
 
 	.polaroid #wrapper {
@@ -5138,7 +5134,9 @@ body.is-preload #intro:not(.hidden)+#header+#nav {
 		height: 520px;
 	}
 
-	/* CHANGE */
+	#main>.posts>* {
+		width: 25%;
+	}
 
 }
 
@@ -5147,34 +5145,50 @@ body.is-preload #intro:not(.hidden)+#header+#nav {
 		width: 280px;
 		height: 380px;
 	}
+	#main>.posts>* {
+		width: 25%;
+	}
 }
 
 @media screen and (max-width: 1050px) {
 	.photo img {
-		width: 230px;
+		width: 180px;
+		height: 250px;
 	}
 
 	.polaroid #wrapper {
 		width: 230px;
 		height: 400px;
 	}
+
+	#main>.posts>* {
+		width: 25%;
+	}
 }
 
 @media screen and (max-width: 980px) {
 	.photo img {
-		width: 230px;
-		height: 350px;
+		width: 150px;
+		height: 220px;
 	}
 
 	.photo {
-		left: 35%;
+		left: 45%;
+	}
+
+	#main>.posts>* {
+		width: 25%;
 	}
 }
 
 @media screen and (max-width: 850px) {
 	.photo img {
-		width: 200px;
-		height: 300px;
+		width: 150px;
+		height: 220px;
+	}
+
+	#main>.posts>* {
+		width: 25%;
 	}
 
 	.polaroid #wrapper {
@@ -5189,8 +5203,8 @@ body.is-preload #intro:not(.hidden)+#header+#nav {
 
 @media screen and (max-width: 736px) {
 	.photo img {
-		width: 180px;
-		height: 260px;
+		width: 130px;
+		height: 180px;
 	}
 
 	.polaroid #wrapper {
@@ -5199,13 +5213,13 @@ body.is-preload #intro:not(.hidden)+#header+#nav {
 	}
 
 	#main>.posts>* {
-		width: 50%;
+		width: 25%;
 	}
 }
 
 @media screen and (max-width: 650px) {
 	.photo img {
-		width: 120px;
+		width: 110px;
 		height: 180px;
 	}
 
@@ -5215,7 +5229,7 @@ body.is-preload #intro:not(.hidden)+#header+#nav {
 	}
 
 	#main>.posts>* {
-		width: 50%;
+		width: 25%;
 	}
 }
 
@@ -5227,6 +5241,11 @@ body.is-preload #intro:not(.hidden)+#header+#nav {
 }
 
 @media screen and (max-width: 500px) {
+	.photo img {
+		width: 80px;
+		height: 120px;
+	}
+
 	.polaroid #wrapper {
 		width: 100px;
 		height: 250px;
@@ -5235,16 +5254,22 @@ body.is-preload #intro:not(.hidden)+#header+#nav {
 	.photo {
 		left: 45%;
 	}
+
+	/* change */
+
+	#div-mid {
+		padding: auto 0;
+	}
 }
 
 @media screen and (max-width: 370px) {
 	.photo img {
-		width: 120px;
-		height: 180px;
+		width: 80px;
+		height: 120px;
 	}
 
 	#main>.posts>* {
-		width: 50%;
+		width: 25%;
 	}
 
 	.polaroid #wrapper {
@@ -5254,7 +5279,7 @@ body.is-preload #intro:not(.hidden)+#header+#nav {
 }
 
 #div-mid {
-	background-image: linear-gradient(to bottom, #FFEDDB, #EDCDBB);
+	background-image: linear-gradient(to bottom, #FFEDDB, #EDCDBB.section1);
 
 }
 
@@ -5263,7 +5288,12 @@ body.is-preload #intro:not(.hidden)+#header+#nav {
 	padding: 0 0;
 	box-shadow: rgba(14, 30, 37, 0.12) 0px 2px 4px 0px, rgba(14, 30, 37, 0.32) 0px 2px 16px 0px;
 	z-index: 999;
-	background-color: #ffffff;
+}
+
+.mid-section h1 {
+	float: right;
+	padding-left: 50%;
+	text-align: center;
 }
 
 .mid-section div {
@@ -5277,8 +5307,9 @@ body.is-preload #intro:not(.hidden)+#header+#nav {
 
 .mid-section img {
 	width: 100%;
-	/* border-radius: 450px 450px 0 0; */
+	border-radius: 450px 450px 0 0;
 	padding: 0;
+	box-shadow: rgba(0, 0, 0, 0.25) 0px 14px 28px, rgba(0, 0, 0, 0.22) 0px 10px 10px;
 }
 
 .mid-section a {
@@ -5288,8 +5319,12 @@ body.is-preload #intro:not(.hidden)+#header+#nav {
 
 @media screen and (max-width: 980px) {
 	.mid-section div {
-		line-height: 1.5;
+		line-height: 2;
 		font-size: 0.7rem;
+	}
+
+	.mid-section {
+		padding-bottom: 10% !important;
 	}
 
 	.mid-section .box {
