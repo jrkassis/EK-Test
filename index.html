@@ -105,9 +105,8 @@
 				</header>
 
 				<!-- Carousel-->
-				<div class="embed-responsive embed-responsive-16by9">
-					<iframe class="embed-responsive-item" src="https://www.youtube.com/embed/mWVKwp2HhNU"
-						allowfullscreen></iframe>
+				<div class="testt embed-responsive embed-responsive-4by3">
+					<iframe class="embed-responsive-item" src="https://www.youtube.com/embed/1DJYiG6wh0w" allowfullscreen></iframe>
 				</div>
 
 				<header>
@@ -194,20 +193,76 @@
 					</div>
 				</article>
 				-->
-			
+
 			</section>
-			
-				<section class="mid-section row">
-					<h1>What We Do</h1>
-					<img src="images/IMG_7462.JPG" alt="" class="col-6">
-					<div class="d-flex align-items-center col-6 text-center">
-						<div class="box">At <a href="portofolio.html">By Elias Khalil</a> Company , we craft <b>dreams
-								into reality</b>. Your perfect day, our expertise. Celebrate love in style with
-							<b>unforgettable events</b> tailored just for you. Where your vision meets our creativity.
-							<br><b>Let's create magic together</b>.
-						</div>
+
+			<section class="mid-section row">
+				<h1>What We Do</h1>
+				<img src="images/IMG_7462.JPG" alt="" class="col-6">
+				<div class="d-flex align-items-center col-6 text-center">
+					<div class="box">At <a href="portofolio.html">By Elias Khalil</a> Company , we craft <b>dreams
+							into reality</b>. Your perfect day, our expertise. Celebrate love in style with
+						<b>unforgettable events</b> tailored just for you. Where your vision meets our creativity.
+						<br><b>Let's create magic together</b>.
 					</div>
+				</div>
+			</section>
+
+			<div class="choose-us">
+				<section class="posts">
+					<article>
+						<h1 style="width: 100%;">Why choose By Elias Khalil Company</h1>
+						<div>At <a href="portofolio.html">By Elias Khalil</a> Company, we bring <b>years of dedicated
+								expertise</b> to the forefront of event organization. Our longstanding commitment within
+							the
+							industry has allowed us to <b>collaborate with students</b> across the nation, honing our
+							skills and
+							understanding of the <b>diverse landscape</b> of event management. <br><i>What sets us apart
+								is our unwavering
+								passion to craft unique and <b>unforgettable experiences.</b></i><br> We thrive on the
+							prospect of forging new
+							adventures alongside our clients, ensuring <b>each event is a testament to
+								<i>creativity</i></b>, <i>precision,
+								and seamless execution.</i></div>
+					</article>
+			</div>
+			<div class="we-organize">
+				<section class="posts">
+					<h1 style="width: 100%; text-align: center;">We Organize</h1>
+					<article style="width: 100%;">
+						<div class="row">
+							<div class="col-12"><a href="javascript:void(0)" data-bs-toggle="tooltip"
+									data-bs-title="Conferences, seminars, team-building activities, product launches, trade shows.">Corporate
+									Events</a></div>
+							<div class="col-6"><a href="javascript:void(0)" data-bs-toggle="tooltip"
+									data-bs-title="Weddings, birthdays, anniversaries, parties, reunions.">Social
+									Events</a></div>
+							<div class="col-6"><a href="javascript:void(0)" data-bs-toggle="tooltip"
+									data-bs-title="Weddings, birthdays, anniversaries, parties, reunions">Cultural
+									Events</a></div>
+							<div class="col-12"><a href="javascript:void(0)" data-bs-toggle="tooltip"
+									data-bs-title="Fundraisers, galas, auctions, charity walks/runs.">Charity Events</a>
+							</div>
+							<div class="col-6"><a href="javascript:void(0)" data-bs-toggle="tooltip"
+									data-bs-title="Tournaments, races, sports days, fan engagement events.">Sports
+									Events</a></div>
+							<div class="col-6"><a href="javascript:void(0)" data-bs-toggle="tooltip"
+									data-bs-title="Workshops, training sessions, educational summits.">Educational
+									Events</a></div>
+							<div class="col-12"><a href="javascript:void(0)" data-bs-toggle="tooltip"
+									data-bs-title="Fashion shows, Movie screenings, music concerts, comedy shows, talent contests.">Entertainment
+									Events</a></div>
+						</div>
+					</article>
 				</section>
+			</div>
+
+			<div class="art-design row">
+				<div class="col-12 text-center actions stacked">
+					<a href="contact.html" class="button primary">Contact Us</a>
+				</div>
+				<div class="col-12"><img id="third-ov" src="images/IMG_7507.JPG" alt=""></div>
+			</div>
 
 			<section class="posts">
 				<article style="width: 100%;" class="section2">
@@ -219,16 +274,19 @@
 					</ul>
 				</article>
 			</section>
+
 		</div>
 
-		<!-- Copyright -->
-		<div id="copyright">
-			<ul>
-				<li>&copy; ByEliasKhalil</li>
-				<li>2023</li>
-				<li>Designed By: <a href="https://www.instagram.com/jrkassis/">Joe El Kassis</a></li>
-			</ul>
-		</div>
+
+	</div>
+
+	<!-- Copyright -->
+	<div id="copyright">
+		<ul>
+			<li>ByEliasKhalil</li>
+			<li>2023</li>
+		</ul>
+	</div>
 
 	</div>
 
@@ -254,6 +312,8 @@
 			$("[data-toggle='popover']").popover({ html: true })
 			$("[data-toggle='popover']").popover({ sanitize: false })
 		});
+		const tooltipTriggerList = document.querySelectorAll('[data-bs-toggle="tooltip"]')
+		const tooltipList = [...tooltipTriggerList].map(tooltipTriggerEl => new bootstrap.Tooltip(tooltipTriggerEl))
 
 	</script>
 	<!-- 

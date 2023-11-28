@@ -8,6 +8,11 @@
 	font-weight: bold;
 }
 
+@font-face {
+	font-family: Palatino;
+	src: url("../Font/Palatino.ttf");
+}
+
 :root {
 	--hover-color: rgb(110, 64, 107);
 }
@@ -140,6 +145,46 @@ q:after {
 table {
 	border-collapse: collapse;
 	border-spacing: 0;
+}
+
+.testt {
+	height: 70vh;
+}
+
+@media screen and (max-width: 1650px) {
+	.testt {
+		height: 60vh;
+	}
+}
+@media screen and (max-width: 980px) {
+	.testt {
+		height: 50vh;
+	}
+}
+@media screen and (max-width: 780px) {
+	.testt {
+		height: 40vh;
+	}
+}
+@media screen and (max-width: 600px) {
+	.testt {
+		height: 30vh;
+	}
+}
+@media screen and (max-width: 430px) {
+	.testt {
+		height: 25vh;
+	}
+}
+@media screen and (max-width: 340px) {
+	.testt {
+		height: 20vh;
+	}
+}
+
+iframe {
+	width: 100%;
+	height: 100%;
 }
 
 body {
@@ -3376,7 +3421,7 @@ table.alt tbody tr td {
 
 @media screen and (max-width: 980px) {
 	.bg-img-1 {
-		background-image: url("../../images/IMG_7503.JPG");
+		background-image: url("../../images/IMG_7593.JPG");
 	}
 }
 
@@ -4122,7 +4167,7 @@ body.is-preload #intro:not(.hidden)+#header+#nav {
 	}
 
 	.section2 {
-		height: 15vh !important;
+		height: 13vh !important;
 	}
 }
 
@@ -4269,7 +4314,7 @@ body.is-preload #intro:not(.hidden)+#header+#nav {
 	display: -ms-flex;
 	display: flex;
 	background-color: #FFEDDB;
-	color: #909498;
+	color: #ffffff;
 	cursor: default;
 	position: relative;
 	margin: 0 auto;
@@ -4784,6 +4829,8 @@ body.is-preload #intro:not(.hidden)+#header+#nav {
 }
 
 #copyright ul li {
+	color: #000000;
+	opacity: 50%;
 	border-left: solid 2px;
 	display: inline-block;
 	line-height: 1;
@@ -4858,7 +4905,7 @@ body.is-preload #intro:not(.hidden)+#header+#nav {
 
 #navPanelToggle:before {
 	content: '\f0c9';
-	margin-right: 0.5rem;
+	/* margin-right: 0.5rem; */
 }
 
 #navPanelToggle.alt {
@@ -5145,6 +5192,7 @@ body.is-preload #intro:not(.hidden)+#header+#nav {
 		width: 280px;
 		height: 380px;
 	}
+
 	#main>.posts>* {
 		width: 25%;
 	}
@@ -5279,7 +5327,7 @@ body.is-preload #intro:not(.hidden)+#header+#nav {
 }
 
 #div-mid {
-	background-image: linear-gradient(to bottom, #FFEDDB, #EDCDBB.section1);
+	background-image: linear-gradient(to bottom, #FFEDDB, #EDCDBB);
 
 }
 
@@ -5310,6 +5358,7 @@ body.is-preload #intro:not(.hidden)+#header+#nav {
 	border-radius: 450px 450px 0 0;
 	padding: 0;
 	box-shadow: rgba(0, 0, 0, 0.25) 0px 14px 28px, rgba(0, 0, 0, 0.22) 0px 10px 10px;
+	margin-top: -10%;
 }
 
 .mid-section a {
@@ -5333,7 +5382,126 @@ body.is-preload #intro:not(.hidden)+#header+#nav {
 }
 
 .break-more {
-	width: 100% !important; 
+	width: 100% !important;
 	background-color: #EDCDBB;
 	box-shadow: rgba(14, 30, 37, 0.12) 0px 2px 4px 0px, rgba(14, 30, 37, 0.32) 0px 2px 16px 0px;
+}
+
+.choose-us {
+	background-color: #EDCDBB;
+}
+
+.choose-us .posts article {
+	width: 100% !important;
+}
+
+.choose-us h1 {
+	text-align: center;
+}
+
+.choose-us .posts article div a {
+	text-decoration: none;
+	color: #000000;
+}
+
+.choose-us .posts article div {
+	margin: 3% 20%;
+	text-align: center;
+}
+
+@media screen and (max-width: 736px) {
+	.choose-us .posts article div {
+		margin: 3% 10%;
+	}
+}
+
+@media screen and (max-width: 550px) {
+	.choose-us .posts article div {
+		margin: 3% 5%;
+	}
+}
+
+.we-organize {
+	background-color: #FFEDDB;
+}
+
+.we-organize h1 {
+	text-align: center;
+	font-size: 2rem;
+}
+
+.we-organize .posts {
+	padding: 0% 0%;
+	width: 100%;
+}
+
+.posts article .row {
+	padding-top: 5%;
+}
+
+.posts article .row div {
+	text-align: center;
+	padding: 2%;
+	font-family: Espoir;
+	font-size: 1.2rem;
+	border-top: #EDCDBB solid 1px;
+
+}
+
+.posts article .row div a {
+	text-decoration: none;
+	color: #000000;
+}
+
+@media screen and (max-width: 650px) {
+	.posts article .row div {
+		padding: 5%;
+	}
+}
+
+.we-organize article {
+	height: 100%;
+	width: 100%;
+}
+
+.art-design {
+	margin: 0;
+	padding: 0;
+	width: 100%;
+	background-color: #EDCDBB;
+}
+
+.art-design div {
+	margin: 0;
+	padding: 0;
+	width: 100%;
+}
+
+.art-design div a {
+	text-decoration: none;
+	color: #000000;
+	margin-bottom: 5vh;
+	margin-top: 2vh;
+}
+
+.art-design div img {
+	margin: 0;
+	padding: 0;
+	width: 100%;
+}
+
+.art-design h1 {
+	margin-bottom: 3vh;
+}
+
+#first-ov {
+	border-radius: 0 200px 200px 0;
+}
+
+#second-ov {
+	border-radius: 200px 200px 0 0;
+}
+
+#third-ov {
+	border-radius: 200px 0 0 200px;
 }
