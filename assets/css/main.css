@@ -3721,7 +3721,7 @@ body.is-preload #intro:not(.hidden)+#header+#nav {
 	}
 
 	#intro+#header {
-		margin-top: -5rem;
+		margin-top: -10rem;
 	}
 
 }
@@ -3889,7 +3889,7 @@ body.is-preload #intro:not(.hidden)+#header+#nav {
 	background: rgba(255, 255, 255, 0.175);
 	height: 4rem;
 	line-height: 4rem;
-	margin: 4rem auto 0 auto;
+	margin: 12rem auto 0 auto;
 	overflow: hidden;
 	padding: 0 2rem 0 0;
 	position: relative;
@@ -5528,13 +5528,50 @@ body.is-preload #intro:not(.hidden)+#header+#nav {
 
 .main-port {
 	width: 100%;
+
 }
+
 
 .main-port div{
-	text-align-last: center;
+	text-align-last: left;
+	line-height: 3;
+	width: 100%;
+
 }
 
+	.main-port .row {
+		padding-right: 0;
+		margin: 0;
+	}
+
 .main-port img {
-	width: 25%;
+	width: 100%;
 	text-align: center;
+	background-color: transparent;
+}
+
+.main-port .box {
+	border: transparent;
+}
+
+@media screen and (max-width: 980px) {
+	.main-port div {
+		line-height: 1.5;
+		font-size: 0.7rem;
+		text-align-last: center;
+		width: 100%;
+	}
+
+	.main-port {
+		padding-bottom: 10% !important;
+	}
+
+	.main-port .box {
+		padding: 0;
+	}
+}
+
+.main-port a {
+	text-decoration: none;
+	color: #000000;
 }
