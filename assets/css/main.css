@@ -156,26 +156,31 @@ table {
 		height: 60vh;
 	}
 }
+
 @media screen and (max-width: 980px) {
 	.testt {
 		height: 50vh;
 	}
 }
+
 @media screen and (max-width: 780px) {
 	.testt {
 		height: 40vh;
 	}
 }
+
 @media screen and (max-width: 600px) {
 	.testt {
 		height: 30vh;
 	}
 }
+
 @media screen and (max-width: 430px) {
 	.testt {
 		height: 25vh;
 	}
 }
+
 @media screen and (max-width: 340px) {
 	.testt {
 		height: 20vh;
@@ -2519,6 +2524,8 @@ label {
 input[type="text"],
 input[type="password"],
 input[type="email"],
+input[type="tel"],
+input[type="date"],
 select,
 textarea {
 	-moz-appearance: none;
@@ -2534,11 +2541,19 @@ textarea {
 	padding: 0 1rem;
 	text-decoration: none;
 	width: 100%;
+	text-align: left;
+	font-family: sans-serif;
+	font-weight: 500;
+	font-style: normal;
+	text-transform: none;
+	font-size: 1rem;
 }
 
 input[type="text"]:invalid,
 input[type="password"]:invalid,
 input[type="email"]:invalid,
+input[type="tel"]:invalid,
+input[type="date"]:invalid,
 select:invalid,
 textarea:invalid {
 	box-shadow: none;
@@ -2564,6 +2579,8 @@ select::-ms-expand {
 input[type="text"],
 input[type="password"],
 input[type="email"],
+input[type="tel"],
+input[type="date"],
 select {
 	height: 3rem;
 }
@@ -2667,6 +2684,8 @@ label {
 input[type="text"],
 input[type="password"],
 input[type="email"],
+input[type="tel"],
+input[type="date"],
 select,
 textarea {
 	border-color: #9A3B3B;
@@ -2675,6 +2694,8 @@ textarea {
 input[type="text"]:focus,
 input[type="password"]:focus,
 input[type="email"]:focus,
+input[type="tel"]:focus,
+input[type="date"]:focus,
 select:focus,
 textarea:focus {
 	border-color: var(--hover-color);
@@ -4420,6 +4441,8 @@ body.is-preload #intro:not(.hidden)+#header+#nav {
 #footer input[type="text"],
 #footer input[type="password"],
 #footer input[type="email"],
+#footer input[type="tel"],
+#footer input[type="date"],
 #footer select,
 #footer textarea {
 	border-color: #E2C799;
@@ -4429,6 +4452,8 @@ body.is-preload #intro:not(.hidden)+#header+#nav {
 #footer input[type="text"]:focus,
 #footer input[type="password"]:focus,
 #footer input[type="email"]:focus,
+#footer input[type="tel"]:focus,
+#footer input[type="date"]:focus,
 #footer select:focus,
 #footer textarea:focus {
 	border-color: var(--hover-color);
@@ -5523,51 +5548,44 @@ body.is-preload #intro:not(.hidden)+#header+#nav {
 @media screen and (max-width: 1100px) {
 	.choose-us div {
 		text-align-last: center
-	};
+	}
+
+	;
 }
 
 .main-port {
 	width: 100%;
-
 }
 
 
 .main-port div{
-	text-align-last: left;
 	line-height: 3;
-	width: 100%;
-
+	position: absolute;
+	margin-left: 50%;
+	margin-right: 1%;
 }
 
-	.main-port .row {
-		padding-right: 0;
-		margin: 0;
-	}
+.main-port{
+	padding-right: 0;
+	margin: 0;
+}
 
 .main-port img {
-	width: 100%;
-	text-align: center;
+	width: 50%;
+	position: relative;
 	background-color: transparent;
+	margin-right: 5%;
+	float: left;
 }
 
-.main-port .box {
-	border: transparent;
-}
-
-@media screen and (max-width: 980px) {
+@media screen and (max-width: 845px) {
 	.main-port div {
-		line-height: 1.5;
-		font-size: 0.7rem;
-		text-align-last: center;
-		width: 100%;
+		line-height: 1.35;
+		font-size: 0.75rem;
 	}
 
 	.main-port {
 		padding-bottom: 10% !important;
-	}
-
-	.main-port .box {
-		padding: 0;
 	}
 }
 
